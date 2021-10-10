@@ -1,0 +1,906 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* color: white; */
+}
+h1,p{
+    color: rgb(225, 225, 225);
+}
+.head-title{
+    text-align: center;
+    color: white;
+    padding: 50px 0px;
+}
+@media(max-width:32em){
+    .head-title{
+        font-size: 20px;
+    }
+}
+/* div{
+    border: 1px solid gray;
+} */
+.logo{
+    padding:0px 0px 20px 30px;
+    /* border: 1px solid gray; */
+    float: left;
+    color: #ffffff;
+    font-size: 20px;
+}
+@media (max-width:32em){
+    .logo{
+        padding:0px 0px 10px 15px;
+        font-size: 15px;
+    }
+}
+
+nav{
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+}
+.nav{
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nav-item{
+    padding:0px 0px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: end;
+}
+@media (max-width:32em){
+    .nav-item{
+        padding:0px 0px;
+        margin-right: 20px;
+    }
+}
+.nav-link li{
+    list-style: none;
+    float: left;
+    padding:5px 20px 5px 20px;
+    font-size: 17px;
+    transition: all 0.3s linear;
+}
+.nav-link li:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 0px 0px 80px rgb(221, 220, 220);
+}
+.nav-link>li>a{
+    text-decoration: none;
+    color: white;
+}
+@media (max-width:32em){
+    .nav-link{
+        display: none;
+    }
+    .bar{
+        display: inline;
+    }
+}
+.bar{
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 0px 10px 0px;
+    display: none;
+}
+@media (max-width:32em){
+    .bar{
+        display: inline;
+        cursor: pointer;
+    }
+    .cross{
+        display: none;
+    }
+}
+
+/* .....Mobile View nav...... */
+.m-nav{
+    z-index: 1;
+    position: fixed;
+    right: 20px;
+    top: 50px;
+    display: none;
+}
+.m-nav-link>li{
+    list-style: none;
+    margin-top: 10px;
+    padding: 10px 30px;
+    background-color: white ;
+    border-radius: 20px;
+}
+@media (min-width:32em){
+    .m-nav-link{
+        display: none;
+    }
+}
+.m-nav-link>li>a{
+    text-decoration: none;
+    color:black;
+}
+/* ......Home...... */
+.home{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+}
+.intro{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;    
+}
+.content{
+    margin-top: 200px;
+    text-align: center;
+}
+@media(max-width:32em){
+    .content{
+        margin-top: 90px;
+    }
+}
+.H1{
+    /* position: relative; */
+    font-size: 50px;
+    color: white;
+    /* animation-name: H1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+@media(max-width:32em){
+    .H1{
+        font-size: 20px;
+    }
+}
+/* .........HELLO...!........ */
+.H1>.H{
+    position: relative;
+    animation:H 1s 1s infinite alternate;
+}
+@keyframes H{
+    0%{
+        color: rgb(255, 255, 255);
+        bottom:0px;
+    }
+    50%{
+        color: rgb(255, 255, 255);
+        bottom:30px;
+    }
+    100%{
+        color: rgb(122, 122, 122);
+        bottom: 0;
+    }
+}
+.H1>.E{
+    position: relative;
+    animation:E 1s 1.1s infinite alternate;
+}
+@keyframes E{
+    0%{
+        color: rgb(255, 255, 255);
+        bottom:0px;
+    }
+    50%{
+        color: rgb(255, 255, 255);
+        bottom:30px;
+    }
+    100%{
+        color: rgb(122, 122, 122);
+        bottom: 0;
+    }
+}
+.H1>.L1{
+    position: relative;
+    animation:L1 1s 1.2s infinite alternate;
+}
+@keyframes L1{
+    0%{
+        color: rgb(255, 255, 255);
+        bottom:0px;
+    }
+    50%{
+        color: rgb(255, 255, 255);
+        bottom:30px;
+    }
+    100%{
+        color: rgb(122, 122, 122);
+        bottom: 0;
+    }
+}
+.H1>.L2{
+    position: relative;
+    animation:L2 1s 1.3s infinite alternate;
+}
+@keyframes L2{
+    0%{
+        color: rgb(255, 255, 255);
+        bottom:0px;
+    }
+    50%{
+        color: rgb(255, 255, 255);
+        bottom:30px;
+    }
+    100%{
+        color: rgb(122, 122, 122);
+        bottom: 0;
+    }
+}
+.H1>.O{
+    position: relative;
+    animation:O 1s 1.4s infinite alternate;
+}
+@keyframes O{
+    0%{
+        color: rgb(255, 255, 255);
+        bottom:0px;
+    }
+    50%{
+        color: rgb(255, 255, 255);
+        bottom:30px;
+    }
+    100%{
+        color: rgb(122, 122, 122);
+        bottom: 0;
+    }
+}
+.H1>.dot-a{
+    position: relative;
+    animation:dot-a 1s 1.5s infinite alternate;
+}
+@keyframes dot-a{
+    0%{
+        color: rgb(255, 255, 255);
+        bottom:0px;
+    }
+    50%{
+        color: rgb(255, 255, 255);
+        bottom:30px;
+    }
+    100%{
+        color: rgb(122, 122, 122);
+        bottom: 0;
+    }
+}
+.H1>.dot-b{
+    position: relative;
+    animation:dot-b 1s 1.6s infinite alternate;
+}
+@keyframes dot-b{
+    0%{
+        color: rgb(255, 255, 255);
+        bottom:0px;
+    }
+    50%{
+        color: rgb(255, 255, 255);
+        bottom:30px;
+    }
+    100%{
+        color: rgb(122, 122, 122);
+        bottom: 0;
+    }
+}
+.H1>.dot-c{
+    position: relative;
+    animation:dot-c 1s 1.7s infinite alternate;
+}
+@keyframes dot-c{
+    0%{
+        color: rgb(255, 255, 255);
+        bottom:0px;
+    }
+    50%{
+        color: rgb(255, 255, 255);
+        bottom:30px;
+    }
+    100%{
+        color: rgb(122, 122, 122);
+        bottom: 0;
+    }
+}
+.H1>.excl{
+    position: relative;
+    animation:excl 1s 1.8s infinite alternate;
+}
+@keyframes excl{
+    0%{
+        color: rgb(255, 255, 255);
+        bottom:0px;
+    }
+    50%{
+        color: rgb(255, 255, 255);
+        bottom:30px;
+    }
+    100%{
+        color: rgb(122, 122, 122);
+        bottom: 0;
+    }
+}
+/* ......My name is Kaung Thant Zin...... */
+.H2{
+    color: white;
+    font-size: 45px;
+}
+.H2>.kaung{
+    position: relative;
+    animation: kaung 1s 1s infinite alternate;
+}
+@keyframes kaung{
+    0%{
+        color: rgb(255, 255, 255);
+        bottom:0px;
+        
+    }
+    50%{
+        color: rgb(255, 255, 255);
+        bottom:30px;
+        font-size: 50px;
+        
+    }
+    100%{
+        color: rgb(136, 136, 136);
+        bottom: 0;
+    }
+}
+.H2>.thant{
+    position: relative;
+    animation: thant 1s 1.2s infinite alternate;
+}
+@keyframes thant{
+    0%{
+        color: rgb(255, 255, 255);
+        bottom:0px;
+        
+    }
+    50%{
+        color: rgb(255, 255, 255);
+        bottom:30px;
+        font-size: 50px;
+        
+    }
+    100%{
+        color: rgb(136, 136, 136);
+        bottom: 0;
+    }
+}
+.H2>.zin{
+    position: relative;
+    animation: zin 1s 1.4s infinite alternate;
+}
+@keyframes zin{
+    0%{
+        color: rgb(255, 255, 255);
+        bottom:0px;
+        
+    }
+    50%{
+        color: rgb(255, 255, 255);
+        bottom:30px;
+        font-size: 50px;
+        
+    }
+    100%{
+        color: rgb(136, 136, 136);
+        bottom: 0;
+    }
+}
+@media(max-width:32em){
+    .H2{
+        font-size: 20px;
+    }
+    .H2>.kaung{
+        position: relative;
+        animation: kaung 1s 1s infinite alternate;
+    }
+    @keyframes kaung{
+        0%{
+            color: rgb(255, 255, 255);
+            bottom:0px;
+            
+        }
+        50%{
+            color: rgb(255, 255, 255);
+            bottom:30px;
+            font-size: 25px;
+            
+        }
+        100%{
+            color: rgb(136, 136, 136);
+            bottom: 0;
+        }
+    }
+    .H2>.thant{
+        position: relative;
+        animation: thant 1s 1.2s infinite alternate;
+    }
+    @keyframes thant{
+        0%{
+            color: rgb(255, 255, 255);
+            bottom:0px;
+            
+        }
+        50%{
+            color: rgb(255, 255, 255);
+            bottom:30px;
+            font-size: 20px;
+            
+        }
+        100%{
+            color: rgb(136, 136, 136);
+            bottom: 0;
+        }
+    }
+
+    .H2>.zin{
+        position: relative;
+        animation: zin 1s 1.4s infinite alternate;
+    }
+    @keyframes zin{
+        0%{
+            color: rgb(255, 255, 255);
+            bottom:0px;
+            
+        }
+        50%{
+            color: rgb(255, 255, 255);
+            bottom:30px;
+            font-size: 20px;
+            
+        }
+        100%{
+            color: rgb(136, 136, 136);
+            bottom: 0;
+        }
+    }
+}
+/* ........I,'m a Web Developer......... */
+.H3{
+    color: white;
+}
+.H3>.WD{
+    position: relative;
+    animation: WD 3s 1s infinite;
+}
+@keyframes WD{
+    0%{
+        color: rgb(255, 255, 255);
+    }
+    50%{
+        color: rgb(255, 255, 255);
+        font-size: 100px;
+        
+    }
+    100%{
+        color: rgb(136, 136, 136);
+    }
+}
+
+@media(max-width:32em){
+    .H3{
+        color: white;
+        font-size: 20px;
+    }
+    .H3>.WD{
+        position: relative;
+        animation: WD 3s 1s infinite;
+    }
+    @keyframes WD{
+        0%{
+            color: rgb(255, 255, 255);
+            font-size: 10px;
+        }
+        50%{
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+            
+        }
+        100%{
+            color: rgb(136, 136, 136);
+            font-size: 10px;
+        }
+    }
+}
+
+/* ............My Skills......... */
+.skill{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.f-end{
+    width: 30%;
+    margin: 0px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* border: 1px solid rgb(255, 255, 255); */
+    border-radius: 20px;
+    box-shadow: 5px 5px 80px rgb(82, 82, 82);
+    transition: all 0.3s linear;
+}
+@media (max-width:32em){
+    .f-end{
+        width: 40%;
+        margin: 0px 10px;
+    }
+}
+.f-skill{
+    padding: 40px;
+}
+@media (max-width:32em){
+    .f-skill{
+        padding:10px 0px;
+    }
+    .f-skill>h1{
+        padding:10px 20px;
+        font-size: 20px;
+    }
+    .f-skill>p{
+        padding:5px 20px;
+        font-size: 13px;
+    }
+}
+.f-end:hover{
+    box-shadow: 5px 5px 80px rgb(60, 255, 0);
+    transform: scale(1.05);
+}
+/* .f-skill>p{
+    animation:f-skill 1s 1s infinite;
+} */
+.HTML{
+    animation:HTML 1s 1s infinite;
+}
+@keyframes HTML{
+    0%{
+        color: rgb(255, 255, 255);
+    }
+    50%{
+        color: rgb(148, 148, 148);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+.CSS{
+    animation:CSS 1s 1.1s infinite;
+}
+@keyframes CSS{
+    0%{
+        color: rgb(255, 255, 255);
+    }
+    50%{
+        color: rgb(148, 148, 148);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+.Bootstrap{
+    animation:Bootstrap 1s 1.2s infinite;
+}
+@keyframes Bootstrap{
+    0%{
+        color: rgb(255, 255, 255);
+    }
+    50%{
+        color: rgb(148, 148, 148);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+.Javascript{
+    animation:Javascript 1s 1.3s infinite;
+}
+@keyframes Javascript{
+    0%{
+        color: rgb(255, 255, 255);
+    }
+    50%{
+        color: rgb(148, 148, 148);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+.JQuery{
+    animation:JQuery 1s 1.4s infinite;
+}
+@keyframes JQuery{
+    0%{
+        color: rgb(255, 255, 255);
+    }
+    50%{
+        color: rgb(148, 148, 148);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+.b-end{
+    width: 30%;
+    margin: 0px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* border: 1px solid rgb(255, 255, 255); */
+    border-radius: 20px;
+    box-shadow: 5px 5px 80px rgb(82, 82, 82);
+    transition: all 0.3s linear;
+}
+@media (max-width:32em){
+    .b-end{
+        width: 40%;
+        margin: 0px 10px;
+    }
+}
+.b-skill{
+    padding: 40px; 
+}
+@media (max-width:32em){
+    .b-skill{
+        padding:10px 0px;
+    }
+    .b-skill>h1{
+        padding:10px 20px;
+        font-size: 20px;
+    }
+    .b-skill>p{
+        padding:5px 20px;
+        font-size: 13px;
+    }
+}
+.b-end:hover{
+    box-shadow: 5px 5px 80px rgb(60, 255, 0);
+    transform: scale(1.05);
+}
+.PHP{
+    animation:PHP 1s 1s infinite;
+}
+@keyframes PHP{
+    0%{
+        color: rgb(255, 255, 255);
+    }
+    50%{
+        color: rgb(148, 148, 148);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+.MySQL{
+    animation:MySQL 1s 1.2s infinite;
+}
+@keyframes MySQL{
+    0%{
+        color: rgb(255, 255, 255);
+    }
+    50%{
+        color: rgb(148, 148, 148);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+.Laravel{
+    animation:Laravel 1s 1.4s infinite;
+}
+@keyframes Laravel{
+    0%{
+        color: rgb(255, 255, 255);
+    }
+    50%{
+        color: rgb(148, 148, 148);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+
+/* .......My Services...... */
+.service{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.serv-content{
+    width: 60%;
+    /* height: 300px; */
+    padding: 30px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 0px 0px 100px rgb(82, 82, 82);
+    transition: all 0.3s linear;
+}
+@media (max-width:32em) {
+    .serv-content{
+        /* padding: 20px; */
+        width: 70%;
+    }
+}
+.serv-content>ul>li{
+    /* margin-bottom: 20px; */
+    line-height: 30px;
+}
+.serv-content>p{
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    line-height: 30px;
+}
+.serv-content:hover{
+    box-shadow: 5px 5px 80px rgb(60, 255, 0);
+    transform: scale(1.05);
+}
+.serv-list{
+    color: white;
+    float: left;
+}
+
+/* .......My Projects....... */
+.project{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+.container3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.proj-content{
+    width: 60%;
+    padding: 30px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 0px 0px 100px rgb(82, 82, 82);
+    transition: all 0.3s linear;
+}
+@media (max-width:32em) {
+    .proj-content{
+        padding: 20px;
+        width: 80%;
+    }
+}
+.proj-content:hover{
+    box-shadow: 5px 5px 80px rgb(60, 255, 0);
+    transform: scale(1.05);
+}
+.proj-content>p{
+    text-align: center;
+}
+@media (max-width:32em) {
+    .proj-content>p{
+        font-size: 15px;
+    }
+}
+.proj-content>p>a{
+    color: white;
+}
+
+/* ......Contact me..... */
+.contact{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+.container4{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+.contact-info{
+    width: 60%;
+    padding: 30px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 0px 0px 100px rgb(82, 82, 82);
+    transition: all 0.3s linear;
+}
+@media (max-width:32em) {
+    .contact-info{
+        width: 70%;
+        /* padding: 50px; */
+    }
+}
+.contact-info:hover{
+    box-shadow: 5px 5px 80px rgb(60, 255, 0);
+    transform: scale(1.05);
+}
+.contact-info>p>.facebook,.instagram{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sendemail{
+    color: white;
+    font-size: 20px;
+    clear: left;
+}
+
+/* ........Copy Right....... */
+.cr{
+    text-align: center;
+    padding: 30px;
+    background-color:rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 100px rgb(82, 82, 82);
+    transition: all 0.3s linear;
+}
+@media (max-width:32em){
+    .cr{
+        box-shadow: 0px 0px 80px rgb(60, 255, 0);
+    }
+    .cp-right{
+        font-size: 11px;
+    }
+}
+.cr:hover{
+    box-shadow: 0px -10px 80px rgb(60, 255, 0);
+}
+/* ...Top button... */
+.top{
+    position: fixed;
+    right: 40px;
+    bottom: 50px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding: 10px;
+    transition: all 0.3s linear;
+    animation: top 1s linear alternate infinite;
+}
+@keyframes top{
+    0%{
+        bottom: 60px;
+    }
+    50%{
+        bottom: 70px;
+    }
+    100%{
+        bottom: 60px;
+    }
+}
+@media (max-width:32em){
+    .top{
+        position: fixed;
+        right: 15px;
+        bottom: 30px;
+    }
+    @keyframes top{
+        0%{
+            bottom: 30px;
+        }
+        50%{
+            bottom: 40px;
+        }
+        100%{
+            bottom: 30px;
+        }
+    }
+}
+.top:hover{
+    box-shadow: 5px 5px 80px rgb(60, 255, 0);
+    transform: scale(1.05);
+}
+.top>a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+@media (max-width:32em){
+    .top>a{
+        font-size: 25px;
+        /* padding: 10px; */
+    }
+}

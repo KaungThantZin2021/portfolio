@@ -1,0 +1,10 @@
+$('.menu').click(function(){
+    $(this).hide('slow');
+    $('.cross').show('slow');
+    $('.m-nav').toggle('slow');
+});
+$('.cross').click(function(){
+    $(this).hide('slow');
+    $('.menu').show('slow');
+    $('.m-nav').toggle('slow');
+});
