@@ -584,8 +584,36 @@ nav{
         color: rgb(255, 255, 255);
     }
 }
+.Sass{
+    animation:CSS 1s 1.2s infinite;
+}
+@keyframes CSS{
+    0%{
+        color: rgb(255, 255, 255);
+    }
+    50%{
+        color: rgb(148, 148, 148);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
 .Bootstrap{
-    animation:Bootstrap 1s 1.2s infinite;
+    animation:Bootstrap 1s 1.3s infinite;
+}
+@keyframes Bootstrap{
+    0%{
+        color: rgb(255, 255, 255);
+    }
+    50%{
+        color: rgb(148, 148, 148);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+.TailwindCSS{
+    animation:Bootstrap 1s 1.4s infinite;
 }
 @keyframes Bootstrap{
     0%{
@@ -599,7 +627,7 @@ nav{
     }
 }
 .Javascript{
-    animation:Javascript 1s 1.3s infinite;
+    animation:Javascript 1s 1.5s infinite;
 }
 @keyframes Javascript{
     0%{
@@ -613,7 +641,21 @@ nav{
     }
 }
 .JQuery{
-    animation:JQuery 1s 1.4s infinite;
+    animation:JQuery 1s 1.6s infinite;
+}
+@keyframes JQuery{
+    0%{
+        color: rgb(255, 255, 255);
+    }
+    50%{
+        color: rgb(148, 148, 148);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+.VueJs{
+    animation:JQuery 1s 1.7s infinite;
 }
 @keyframes JQuery{
     0%{
@@ -818,7 +860,7 @@ nav{
     box-shadow: 5px 5px 80px rgb(60, 255, 0);
     transform: scale(1.05);
 }
-.contact-info>p>.facebook,.instagram{
+.contact-info>p>.linkedin,.facebook,.instagram,.phone-number{
     color: white;
     font-size: 20px;
     text-decoration: none;

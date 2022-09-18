@@ -82,7 +82,7 @@
                     <span class="thant">T</span>hant
                     <span class="zin">Z</span>in
                 </h1>
-                <h1 class="H3">I'm a <span class="WD">Web Developer</span></h1>
+                <h1 class="H3">I'm a <span class="WD">Junior Web Developer</span></h1>
             </div>
         </div>
     </div>
@@ -97,9 +97,12 @@
                 <h1>Front-end</h1>
                 <p class="HTML"><i class="fab fa-html5"></i> HTML</i></p>
                 <p class="CSS"><i class="fab fa-css3-alt"></i> CSS</p>
+                <p class="Sass"><i class="fa-brands fa-sass"></i> Sass</p>
                 <p class="Bootstrap"><i class="fab fa-bootstrap"></i> Bootstrap</p>
+                <p class="TailwindCSS"><img src="img/tailwind-css.png" width="15px" height="15px" style="color: white;"> Tailwind CSS</p>
                 <p class="Javascript"><i class="fab fa-js-square"></i> Javascript</p>
                 <p class="JQuery"><img src="img/Logo-JQuery-256.png" width="15px" height="15px"> JQuery</p>
+                <p class="VueJs"><i class="fab fa-vuejs"></i> Vue.js</p>
             </div>
         </div>
         <div class="b-end">
@@ -108,7 +111,8 @@
                 <p class="PHP"><i class="fab fa-php"></i> PHP</p>
                 <p class="MySQL"><i class="fas fa-database"></i> MySQL</p>
                 <p class="Laravel"><i class="fab fa-laravel"></i> Laravel</p>
-                
+                <hr style="color: white;">
+                <p>API Development with REST API</p>
             </div>
         </div>
     </div>
@@ -148,14 +152,15 @@
         <div class="contact-info">
             <p class="email" data-aos="zoom-out-up">kaungthantzin409@gmail.com</p>
             <p data-aos="zoom-out-up"><a href="mailto:kaungthantzin409@gmail.com" class="sendemail"><i class="fas fa-paper-plane"></i> Send Email</a></p>
-            <p data-aos="zoom-out-up"><a class="facebook" href="https://www.facebook.com/kaung.zin.54966" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></p>
+            <p data-aos="zoom-out-up"><a class="linkedin" href="https://www.linkedin.com/in/kaungthantzin2022" target="_blank"><i class="fab fa-linkedin"></i> linkedin</a></p>
+            <p data-aos="zoom-out-up"><a class="facebook" href="https://www.facebook.com/profile.php?id=100072869688526" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></p>
             <p data-aos="zoom-out-up"><a class="instagram" href="https://www.instagram.com/kaungthant787/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></p>
-            <p data-aos="zoom-out-up">+95909760434715</p>
+            <p data-aos="zoom-out-up"><a class="phone-number" href="tel:+959760434715">+959760434715</a></p>
         </div>
     </div>
 </div>
 <div class="cr">
-    <p class="cp-right">Copyright <i class="far fa-copyright"></i> 2022 Kaung Thant Zin.All Rights Reserved.</p>
+    <p class="cp-right">Copyright <i class="far fa-copyright"></i> <span id="date" style="color: white"></span> Kaung Thant Zin.All Rights Reserved.</p>
 </div>
 <div class="top" data-aos="fade-up"><a data-aos="fade-up" href="#HOME">^</a></div>
 
@@ -191,6 +196,9 @@
         } // End if
       });
     });
-    </script>  
+
+    const d = new Date();
+    document.getElementById("date").innerHTML = d.getFullYear();
+</script>  
 </body>
 </html>
